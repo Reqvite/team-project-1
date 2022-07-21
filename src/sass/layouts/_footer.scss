@@ -1,0 +1,32 @@
+.button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.icon-list {
+  display: flex;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 32px;
+    width: 32px;
+
+    background-color: $mainIcon-bgColor;
+    border-radius: 50%;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.contact {
+  &__phone {
+    text-decoration: none;
+  }
+}
