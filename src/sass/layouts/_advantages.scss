@@ -1,0 +1,116 @@
+.section-advantages {
+  background-color: $about-advantagesBG;
+
+  padding-bottom: 87px;
+
+  @include tablet {
+    padding-bottom: 251px;
+  }
+
+  @include desktop {
+    padding-bottom: 209px;
+  }
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 32px;
+
+  @include tablet {
+    display: flex;
+    gap: 22px;
+  }
+
+  @include desktop {
+    gap: 80px;
+  }
+
+  &__item {
+    &:nth-child(1):before {
+      content: '';
+      display: block;
+      height: 50px;
+      background-image: url(../images/advantages/advantages-1-min.png);
+      background-repeat: no-repeat;
+      background-position: left;
+      margin-bottom: 16px;
+
+      @include tablet {
+        margin-bottom: 36px;
+      }
+      @include desktop {
+        margin-bottom: 40px;
+      }
+    }
+    &:nth-child(2):before {
+      content: '';
+      display: block;
+      height: 50px;
+      background-image: url(../images/advantages/advantages-2-min.png);
+      background-repeat: no-repeat;
+      background-position: left;
+      margin-bottom: 16px;
+
+      @include tablet {
+        margin-bottom: 36px;
+      }
+      @include desktop {
+        margin-bottom: 40px;
+      }
+    }
+    &:nth-child(3):before {
+      content: '';
+      display: block;
+      height: 50px;
+      background-image: url(../images/advantages/advantages-3-min.png);
+      background-repeat: no-repeat;
+      background-position: left;
+      margin-bottom: 16px;
+
+      @include tablet {
+        margin-bottom: 36px;
+      }
+      @include desktop {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__info {
+    color: $main-titleColor;
+    font-family: $titleFont;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.14;
+    }
+    @include desktop {
+      font-size: 58px;
+      line-height: 1.14;
+    }
+  }
+
+  &__text {
+    margin-top: 25px;
+    color: $secondary-textColor;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.74;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.76;
+    }
+  }
+}
