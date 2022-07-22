@@ -1,45 +1,49 @@
-.button{
+.button {
+  color: $mainButton-textColor;
+  background-color: $mainButton-bgColor;
 
-    color: $mainButton-textColor ;
-    background-color: $mainButton-bgColor ;
+  cursor: pointer;
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  border: none;
+  border-radius: 20px;
 
-    border: none;
-    border-radius: 20px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus{
-        background-color: $mainButton-hoverColor ;
-    }
+  &:hover,
+  &:focus {
+    background-color: $mainButton-hoverColor;
+  }
 }
 
-.button-secondary{
-    color: $secondaryButton-textColor ;
-    background-color: $secondaryButton-bgColor ;
+.button-secondary {
+  color: $secondaryButton-textColor;
+  background-color: $secondaryButton-bgColor;
 
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  cursor: pointer;
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-    border: none;
-    border-radius: 20px;
+  border: none;
+  border-radius: 20px;
 
-    &:hover,
-    &:focus{
-        background-color: $mainButton-hoverColor ;
-    }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover,
+  &:focus {
+    background-color: $secondaryButton-hoverColor;
+  }
 }
