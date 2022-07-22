@@ -1,0 +1,111 @@
+.section-contacts {
+  background-color: $secondaryContainer-bgColor;
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+}
+.contacts__item {
+  max-width: 280px;
+  padding: 40px 32px;
+  background-color: $mainButton-bgColor;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  @media screen and (max-width: 767.7px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 32px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 368px;
+  }
+}
+.contacts__item-name {
+  background-color: $contacts-bgCafe;
+  border-radius: 4px;
+  max-width: 80px;
+  text-align: center;
+  color: $main-textColor;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+.contacts__item-name--other {
+  background-color: $contacts-bgFood;
+}
+.contacts__place {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+}
+.contacts__city {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $secondary-textColor;
+  margin-bottom: 8px;
+}
+.contacts__info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $contacts-textColor;
+  margin-bottom: 24px;
+}
+.contacts__schedule {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+}
+.contacts__schedule-item:first-child {
+  margin-bottom: 8px;
+}
+.contacts__schedule-item:last-child {
+  margin-bottom: 24px;
+}
+.contacts__days {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $secondary-textColor;
+}
+.contacts__time {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $secondary-titleColor;
+}
+.contacts__link {
+  color: $contacts-textColor;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  &:hover,
+  &:focus {
+    color: $mainButton-textColor;
+  }
+}
+.contacts__button--red {
+  margin-bottom: 10px;
+}
