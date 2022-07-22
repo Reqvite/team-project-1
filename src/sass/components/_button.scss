@@ -1,0 +1,45 @@
+.button{
+
+    color: $mainButton-textColor ;
+    background-color: $mainButton-bgColor ;
+
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    border: none;
+    border-radius: 20px;
+
+    &:hover,
+    &:focus{
+        background-color: $mainButton-hoverColor ;
+    }
+}
+
+.button-secondary{
+    color: $secondaryButton-textColor ;
+    background-color: $secondaryButton-bgColor ;
+
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    border: none;
+    border-radius: 20px;
+
+    &:hover,
+    &:focus{
+        background-color: $mainButton-hoverColor ;
+    }
+
+}
