@@ -1,0 +1,41 @@
+.footer {
+  background-color: $secondaryContainer-bgColor;
+}
+.button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+  &__item {
+    height: 32px;
+    width: 32px;
+
+    background-color: $mainIcon-bgColor;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: $contacts-textHover;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.contact {
+  &__phone {
+    text-decoration: none;
+  }
+}
