@@ -1,0 +1,25 @@
+.title{
+    color: $main-titleColor;
+
+    font-family: $titleFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.title-secondary{
+    color: $secondary-titleColor;
+
+    font-family: $titleFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
