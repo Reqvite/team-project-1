@@ -27,14 +27,29 @@
   }
 
   &__item {
+    max-width: 230px;
+
+    @include tablet {
+      max-width: 180px;
+    }
+
+    @include desktop {
+      max-width: 317px;
+    }
+
     &:nth-child(1):before {
       content: '';
       display: block;
       height: 50px;
-      background-image: url(../images/advantages/advantages-1-min.png);
+      background-image: url(../images/advantages/advantages-1.png);
       background-repeat: no-repeat;
       background-position: left;
+      background-size: contain;
       margin-bottom: 16px;
+
+      @include retina {
+        background-image: url(../images/advantages/advantages-1@2x.png);
+      }
 
       @include tablet {
         margin-bottom: 36px;
@@ -47,10 +62,15 @@
       content: '';
       display: block;
       height: 50px;
-      background-image: url(../images/advantages/advantages-2-min.png);
+      background-image: url(../images/advantages/advantages-2.png);
       background-repeat: no-repeat;
       background-position: left;
+      background-size: contain;
       margin-bottom: 16px;
+
+      @include retina {
+        background-image: url(../images/advantages/advantages-2@2x.png);
+      }
 
       @include tablet {
         margin-bottom: 36px;
@@ -63,10 +83,15 @@
       content: '';
       display: block;
       height: 50px;
-      background-image: url(../images/advantages/advantages-3-min.png);
+      background-image: url(../images/advantages/advantages-3.png);
       background-repeat: no-repeat;
       background-position: left;
+      background-size: contain;
       margin-bottom: 16px;
+
+      @include retina {
+        background-image: url(../images/advantages/advantages-3@2x.png);
+      }
 
       @include tablet {
         margin-bottom: 36px;
