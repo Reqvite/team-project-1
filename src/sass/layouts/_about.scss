@@ -1,0 +1,224 @@
+.section-about {
+  background-color: #fff5f6;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    background-position: 50% 85%;
+    background-image: url(../images/about/icecream-bg-2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 521px;
+  }
+}
+
+.section__name {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 15px;
+
+  color: #ffa5ba;
+
+  @include tablet {
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+
+  @include desktop {
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
+}
+.section__header {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  margin-bottom: 32px;
+
+  color: $main-titleColor;
+
+  @include tablet {
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+  @include desktop {
+    margin-bottom: 60px;
+    font-size: 58;
+    line-height: calc(66 / 58);
+  }
+}
+
+.article {
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @include desktop {
+    gap: 100px;
+  }
+}
+
+.article__image {
+  width: 100%;
+  height: 279px;
+  background-image: url(../images/about/home-pic-desk-2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  margin-bottom: 40px;
+
+  @include tablet {
+    width: 336px;
+    height: 335px;
+    // margin-right: 30px;
+  }
+  @include desktop {
+    width: 501px;
+    height: 501px;
+    margin-bottom: 20px;
+    // margin-right: 30px;
+  }
+}
+.article__content {
+  display: block;
+  background-position: 50% 30%;
+  background-image: url(../images/about/icecream-bg-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include tablet {
+    background-image: none;
+  }
+
+  // @include desktop {
+  //   display: block;
+  //   background-position: 50% 50%;
+  //   background-image: url(../images/about/icecream-bg-2x.png);
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  // }
+}
+
+.article__header {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  color: #000000;
+
+  margin-bottom: 20px;
+
+  max-width: 220px;
+
+  @include tablet {
+    max-width: 334px;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: calc(25 / 14);
+  }
+
+  @include desktop {
+    max-width: 463px;
+    margin-bottom: 32px;
+
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
+}
+.article__description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+
+  color: #907e82;
+  margin-bottom: 20px;
+
+  max-width: 220px;
+
+  @include tablet {
+    max-width: 334px;
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: calc(25 / 14);
+  }
+
+  @include desktop {
+    max-width: 463px;
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: calc(27 / 14);
+  }
+}
+
+br {
+  content: '';
+  display: block;
+  margin: 10px 0;
+
+  @include desktop {
+    margin: 20px 0;
+  }
+}
+
+.about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  width: 200px;
+  padding-left: 0;
+  padding-right: 0;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #d41443;
+
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: transparent;
+}
+
+.button__icon {
+  fill: transparent;
+  stroke: currentColor;
+  margin-left: 14px;
+}
