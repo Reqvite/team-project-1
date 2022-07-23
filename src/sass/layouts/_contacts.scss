@@ -47,13 +47,27 @@
   line-height: 1.86;
   letter-spacing: 0.04em;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.86;
+    margin-bottom: 32px;
+  }
 }
 .contacts__item-name--other {
   background-color: $contacts-bgFood;
+  min-width: 130px;
+  @media screen and (min-width: 768px) {
+    min-width: 138px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 .contacts__place {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts__city {
   font-style: normal;
@@ -63,6 +77,11 @@
   letter-spacing: 0.04em;
   color: $secondary-textColor;
   margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.86;
+    margin-bottom: 12px;
+  }
 }
 .contacts__info {
   font-style: normal;
@@ -71,16 +90,30 @@
   line-height: 1.5;
   color: $contacts-textColor;
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.66;
+    margin-bottom: 32px;
+  }
 }
 .contacts__schedule {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts__schedule-item:first-child {
   margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 .contacts__schedule-item:last-child {
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts__days {
   font-style: normal;
@@ -88,6 +121,10 @@
   font-size: 12px;
   line-height: 1.86;
   color: $secondary-textColor;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
 }
 .contacts__time {
   font-style: normal;
@@ -95,10 +132,15 @@
   font-size: 12px;
   line-height: 1.86;
   color: $secondary-titleColor;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
 }
 .contacts__link-wrap {
   @media screen and (min-width: 1200px) {
-    margin-right: 38px;
+    margin-right: 39px;
+    // padding-right: 60px;
   }
 }
 .contacts__link {
@@ -112,6 +154,14 @@
   }
   &:first-child {
     margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.83;
   }
 }
 .contacts__buttons {
