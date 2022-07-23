@@ -1,5 +1,5 @@
 .section-about {
-  background-color: #fff5f6;
+  background-color: $about-advantagesBG;
   padding-top: 60px;
   padding-bottom: 40px;
 
@@ -18,10 +18,20 @@
     background-size: contain;
     background-size: 100% 521px;
   }
+
+  @include desktop {
+    @include retina {
+      background-position: 50% 85%;
+      background-image: url(../images/about/icecream-bg-2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: 100% 521px;
+    }
+  }
 }
 
 .section__name {
-  font-family: 'Titan One';
+  font-family: $titleFont;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -31,7 +41,7 @@
 
   margin-bottom: 15px;
 
-  color: #ffa5ba;
+  color: $secondary-titleColor;
 
   @include tablet {
     margin-bottom: 16px;
@@ -46,7 +56,7 @@
   }
 }
 .section__header {
-  font-family: 'Titan One';
+  font-family: $titleFont;
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -93,16 +103,38 @@
 
   margin-bottom: 40px;
 
+  @include retina {
+    background-image: url(../images/about/home-pic-desk-2x.png);
+  }
+
   @include tablet {
     width: 336px;
     height: 335px;
-    // margin-right: 30px;
+    background-image: url(../images/about/home-pic-desk-2x.png);
   }
+
+  @include tablet {
+    @include retina {
+      width: 336px;
+      height: 335px;
+      background-image: url(../images/about/home-pic-desk-2x.png);
+    }
+  }
+
   @include desktop {
     width: 501px;
     height: 501px;
     margin-bottom: 20px;
-    // margin-right: 30px;
+    background-image: url(../images/about/home-pic-desk-2x.png);
+  }
+
+  @include desktop {
+    @include retina {
+      width: 501px;
+      height: 501px;
+      margin-bottom: 20px;
+      background-image: url(../images/about/home-pic-desk-2x.png);
+    }
   }
 }
 .article__content {
@@ -112,26 +144,26 @@
   background-repeat: no-repeat;
   background-size: contain;
 
+  @include retina {
+    display: block;
+    background-position: 50% 30%;
+    background-image: url(../images/about/icecream-bg-2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   @include tablet {
     background-image: none;
   }
-
-  // @include desktop {
-  //   display: block;
-  //   background-position: 50% 50%;
-  //   background-image: url(../images/about/icecream-bg-2x.png);
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  // }
 }
 
 .article__header {
-  font-family: 'DM Sans';
+  font-family: $mainFont;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(19 / 12);
-  color: #000000;
+  color: $secondary-textColor;
 
   margin-bottom: 20px;
 
@@ -154,13 +186,13 @@
   }
 }
 .article__description {
-  font-family: 'DM Sans';
+  font-family: $mainFont;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(19 / 12);
 
-  color: #907e82;
+  color: $description-textColor;
   margin-bottom: 20px;
 
   max-width: 220px;
@@ -202,19 +234,24 @@ br {
   padding-left: 0;
   padding-right: 0;
 
-  font-family: 'DM Sans';
+  font-family: $mainFont;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
+  line-height: calc(18 / 14);
 
-  color: #d41443;
+  color: $mainButton-textColor;
 
   width: 176px;
   height: 44px;
-  background: #ffffff;
+  background: $main-textColor;
   border-radius: 22px;
   border: transparent;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: calc(21 / 16);
+  }
 }
 
 .button__icon {
