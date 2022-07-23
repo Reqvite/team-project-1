@@ -125,6 +125,7 @@
 }
 
 .close-menu__btn {
+    z-index: 900;
     display: block;
     margin-left: auto;
     margin-bottom: 10px;
@@ -140,12 +141,12 @@
 .mob-nav__item{
     position: relative;
 
-    // &::after {
-    //     content: "";
-    //     position: absolute;
-    //     width: 100%;
-    //     border: 1px solid #E18298;
-    // }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        border: 1px solid #E18298;
+    }
 
                 &::before {
                     content: "";
