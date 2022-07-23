@@ -139,6 +139,15 @@
   }
 }
 
+.wrap {
+  width: 100%;
+
+  padding-bottom: 3px;
+  padding-top: 16px;
+
+  border-top: 1px solid $borderColor;
+}
+
 .all-rights {
   width: 150px;
 
@@ -151,5 +160,5 @@
   line-height: 1.52;
   text-align: center;
 
-  color: #907e82;
+  color: $description-textColor;
 }
