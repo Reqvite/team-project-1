@@ -275,6 +275,7 @@ body {
 
 .mob-nav__item {
   position: relative;
+  width: 100%;
 }
 .mob-nav__item::after {
   content: "";
