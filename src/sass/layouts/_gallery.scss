@@ -6,6 +6,9 @@
     padding-top: 30px;
     padding-bottom: 30px;
 
+    background: linear-gradient(0deg, rgba(255,255,255,1) 60%,
+     rgba(255,245,246,1) 60%);
+
     @media screen and (min-width: $tablet) {
         padding-top: 60px;
         padding-bottom: 60px;
