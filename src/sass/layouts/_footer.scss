@@ -1,22 +1,182 @@
 .footer {
+  padding-top: 32px;
+
   background-color: $secondaryContainer-bgColor;
-}
-.button {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+
+  @include tablet {
+    padding-top: 60px;
+  }
+
+  &__wrap-button {
+    margin-bottom: 40px;
+
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include desktop {
+      margin-bottom: 120px;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    height: 44px;
+    width: 161px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    @include tablet {
+      margin: 0;
+    }
+
+    &--secondary {
+      margin-bottom: 10px;
+
+      @include tablet {
+        margin-right: 15px;
+      }
+
+      @include desktop {
+        margin-right: 12px;
+      }
+    }
+
+    &--main {
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    &--secondary {
+      color: $secondaryButton-textColor;
+      &::after {
+        content: '';
+        display: block;
+        height: 10px;
+        width: 6px;
+        margin-left: 8px;
+        background-image: url(../../src/images/icon-arrow-white.svg);
+      }
+    }
+
+    &--main {
+      color: $mainButton-textColor;
+      &::after {
+        content: '';
+        display: block;
+        height: 10px;
+        width: 6px;
+        margin-left: 8px;
+        background-image: url(../../src/images/icon-arrow-red.svg);
+        background-color: $mainButton-bgColor;
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: 40px;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      margin-bottom: 48px;
+    }
+
+    @include desktop {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__wrap-text {
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    font-family: $titleFont;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__text--ordinary {
+    width: 340px;
+
+    margin-bottom: 16px;
+
+    font-size: 18px;
+    line-height: 1.17;
+
+    color: $secondary-titleColor;
+
+    @include tablet {
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+    }
+
+    @include desktop {
+      width: 474px;
+    }
+  }
+
+  &__text--accent {
+    width: 340px;
+
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+
+    color: $main-titleColor;
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.15;
+      letter-spacing: 0.06em;
+    }
+
+    @include desktop {
+      width: 474px;
+    }
+  }
+
+  &__wrap-contacts {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      padding-bottom: 19px;
+    }
+  }
 }
 
 .icon-list {
   display: flex;
   justify-content: flex-end;
   gap: 28px;
+
+  margin-bottom: 40px;
+
   &__item {
     height: 32px;
     width: 32px;
 
     background-color: $mainIcon-bgColor;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -35,7 +195,56 @@
 }
 
 .contact {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  &__text {
+    color: $secondary-textColor;
+  }
+
   &__phone {
+    color: $main-titleColor;
     text-decoration: none;
+  }
+}
+
+.wrap-all-rights {
+  width: 100%;
+
+  padding-bottom: 3px;
+  padding-top: 16px;
+
+  border-top: 1px solid $borderColor;
+
+  @include tablet {
+    padding-bottom: 9px;
+    padding-top: 10px;
+  }
+}
+
+.all-rights {
+  width: 150px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+
+  color: $description-textColor;
+
+  @include tablet {
+    width: 300px;
   }
 }
