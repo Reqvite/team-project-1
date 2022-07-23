@@ -51,7 +51,7 @@
     object-position: center;
   }
 
-  &__info {
+  &__comments {
     padding: 43px 50px 17px;
     background-color: #fafafa;
     margin-bottom: 36px;
@@ -117,18 +117,13 @@
     }
   }
 
-  &__contact {
+  &__info {
     position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.86;
     text-align: center;
     color: $secondary-textColor;
-    margin-bottom: 16px;
-
-    @include tablet {
-      margin-bottom: 32px;
-    }
 
     @include desktop {
       font-size: 20px;
