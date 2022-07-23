@@ -270,7 +270,7 @@ body {
 }
 
 .mob-nav__item:not(:last-child) {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .mob-nav__item {
