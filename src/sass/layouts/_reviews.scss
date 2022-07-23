@@ -1,0 +1,145 @@
+.reviews {
+  padding: 30px 0;
+  margin: 0 auto;
+  background-color: $main-bgColor;
+
+    @include tablet {
+      padding: 30px 0px 40px;
+    }
+
+    @include desktop {
+      padding: 60px 0;
+    }
+
+  &__container {
+
+    @include tablet {
+      padding: 0 58px;
+    }
+
+    @include desktop {
+      padding: 0 100px;
+    }
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__box-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    @include desktop {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__comments {
+    padding: 43px 50px 17px;
+    background-color: #fafafa;
+    margin-bottom: 36px;
+
+    @include tablet {
+      padding: 37px 6px 36px;
+      margin-bottom: 24px;
+      background-color: #fafafa66;
+    }
+
+    @include desktop {
+      padding: 47px 74px 31px 73px;
+      margin-bottom: 36px;
+      background-color: #fafafa;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+    display: block;
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $secondary-textColor;
+    padding: 0px 8px 9px 15px;
+
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 30px,
+      #e1e1e1 30px,
+      #e1e1e1 31px
+    );
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 2.16;
+      padding: 0px 49px 8px 45px;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.86;
+      padding: 0px 35px 8px 36px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: 0;
+      height: 40px;
+      width: 54px;
+      z-index: -1;
+      background-image: url('../images/reviews/quotes.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &__info {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    text-align: center;
+    color: $secondary-textColor;
+
+    @include desktop {
+      font-size: 20px;
+    }
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 4px;
+      width: 4px;
+      border-radius: 50%;
+      background-color: #C7133E;
+      box-shadow: -14px 0 0 #C7133E, 14px 0 0 #C7133E;
+    }
+  }
+}
