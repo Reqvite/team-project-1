@@ -1,25 +1,32 @@
-.title{
-    color: $main-titleColor;
+.title {
+  color: $main-titleColor;
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.48;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-    font-family: $titleFont;
-    font-style: normal;
-    font-weight: 400;
+  @include tablet {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+  @include desktop {
     font-size: 58px;
-    line-height: 66px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    line-height: 1.38;
+  }
 }
 
-.title-secondary{
-    color: $secondary-titleColor;
-
-    font-family: $titleFont;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 34px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+.title-secondary {
+  color: $secondary-titleColor;
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }

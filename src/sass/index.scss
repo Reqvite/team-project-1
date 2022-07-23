@@ -10,9 +10,11 @@
 @import './base/container';
 @import './base/body';
 @import './base/titles';
+@import './base/section';
 
 // components
 @import './components/button';
+@import './components/slider-dots';
 
 // layuots
 @import './layouts/header';
