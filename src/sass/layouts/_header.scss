@@ -8,7 +8,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 8px;
 
+        @include tablet {
+                padding-top: 32px;
+                padding-bottom: 20px;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+
+    @include desktop{
+    padding-top: 37px;
+    padding-bottom: 37px;
+    }
+   
 }
 
 .nav.list {
@@ -51,6 +64,7 @@
 
     @include tablet {
         display: block;
+        margin-left: 32px;
     }
 }
 
@@ -58,7 +72,7 @@
 .menu-open__btn {
     display: block;
     margin-left: auto;
-    //  background-color: transparent;
+    background-color: transparent;
     border: 0;
     cursor: pointer;
 
