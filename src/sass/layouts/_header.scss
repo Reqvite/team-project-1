@@ -115,6 +115,9 @@
     height: 100vh;
     padding-top: 60px;
     padding-bottom: 48px;
+    transform: translatex(0%);
+    
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .container {
      max-width: 100%;
@@ -133,6 +136,10 @@
     }
 
 
+}
+
+.mob__menu.is-hidden{
+transform: translatex(100%);
 }
 
 .mob__menu__button {
