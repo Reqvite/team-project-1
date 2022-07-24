@@ -230,3 +230,102 @@ br {
   stroke: currentColor;
   margin-left: 14px;
 }
+
+// about-modal
+
+.about__modal {
+  position: fixed;
+  background-color: #fff5f6;
+  border: 1px solid tomato;
+  overflow: hidden;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  width: 75vw;
+  // height: 75vh;
+  padding-top: 0;
+
+  border-radius: 22px;
+
+  transform: translate(-50%, -50%);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .about__modal-container {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+  }
+}
+
+.about__modal-bottom {
+  padding: 50px 20px;
+  overflow: scroll;
+  color: #907e82;
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.about__modal.is-hidden {
+  transform: translatex(100%);
+}
+
+.about__button {
+  margin-bottom: 32px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-close__button {
+  position: absolute;
+  z-index: 2;
+  top: -1px;
+  right: 0;
+  border: 0;
+  cursor: pointer;
+
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  color: $mainButton-textColor;
+
+  width: 176px;
+  height: 44px;
+  background: $main-textColor;
+  border-radius: 22px;
+  border: white;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: $mainButton-hoverColor;
+    cursor: pointer;
+  }
+
+  @include tablet {
+    font-size: 16px;
+    line-height: calc(21 / 16);
+  }
+}
+
+.button__icon-close {
+  fill: currentColor;
+  stroke: currentColor;
+  margin-left: 5px;
+}
+
+.about-close__button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
