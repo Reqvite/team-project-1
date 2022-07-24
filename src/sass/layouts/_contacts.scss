@@ -41,12 +41,14 @@
   color: $main-textColor;
   border-radius: 4px;
   max-width: 80px;
+  min-height: 16px;
   text-align: center;
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
+
   @media screen and (min-width: 768px) {
     font-size: 16px;
     margin-bottom: 32px;
@@ -173,7 +175,7 @@
     margin: 0;
   }
 }
-.contacts__button--red {
+.button-secondary.contacts__button--red {
   min-height: 44px;
   margin-bottom: 10px;
   padding-left: 17px;
@@ -187,7 +189,7 @@
     margin-bottom: 0px;
   }
 }
-.contacts__button--white {
+.button.contacts__button--white {
   min-height: 44px;
   padding-left: 32px;
   padding-right: 17px;
