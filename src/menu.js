@@ -12,4 +12,3 @@
     refs.body.classList.toggle('no-scroll');
   }
 })();
-
