@@ -38,31 +38,51 @@
 }
 .contacts__item-name {
   background-color: $contacts-bgCafe;
+  color: $main-textColor;
   border-radius: 4px;
   max-width: 80px;
+  min-height: 16px;
   text-align: center;
-  color: $main-textColor;
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: 1.83;
   letter-spacing: 0.04em;
-  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+    border-radius: 6px;
+  }
 }
 .contacts__item-name--other {
   background-color: $contacts-bgFood;
+  min-width: 130px;
+  @media screen and (min-width: 768px) {
+    min-width: 138px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 .contacts__place {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts__city {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: 1.83;
   letter-spacing: 0.04em;
   color: $secondary-textColor;
   margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
 }
 .contacts__info {
   font-style: normal;
@@ -71,36 +91,60 @@
   line-height: 1.5;
   color: $contacts-textColor;
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.66;
+    margin-bottom: 32px;
+  }
 }
 .contacts__schedule {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts__schedule-item:first-child {
   margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 .contacts__schedule-item:last-child {
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts__days {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: 1.83;
   color: $secondary-textColor;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 .contacts__time {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: 1.83;
   color: $secondary-titleColor;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 .contacts__link-wrap {
-  margin-right: 38px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 39px;
+    // padding-right: 60px;
+  }
 }
 .contacts__link {
   color: $contacts-textColor;
+  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -108,21 +152,32 @@
   &:focus {
     color: $mainButton-textColor;
   }
+  &:first-child {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 .contacts__buttons {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     margin: 0;
   }
 }
-.contacts__button--red {
+.button-secondary.contacts__button--red {
   min-height: 44px;
   margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 17px;
   padding-right: 17px;
   font-weight: 700;
@@ -134,7 +189,7 @@
     margin-bottom: 0px;
   }
 }
-.contacts__button--white {
+.button.contacts__button--white {
   min-height: 44px;
   padding-left: 32px;
   padding-right: 17px;
@@ -142,12 +197,14 @@
   font-size: 16px;
   line-height: 1.31;
   @media screen and (min-width: 768px) {
+    margin: 0;
     margin-left: 0;
   }
 }
-.contacts__button--red-icon {
+.contacts__button-icon--red {
   margin-left: 8px;
 }
 .contacts__button--white-icon {
+  fill: $mainButton-textColor;
   margin-left: 13.17px;
 }
