@@ -1,0 +1,14 @@
+.grid-item{
+    width: 200px;
+}
+
+.gallery{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+    }
+}

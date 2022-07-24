@@ -96,6 +96,9 @@
   line-height: 1.86;
   color: $secondary-titleColor;
 }
+.contacts__link-wrap {
+  margin-right: 38px;
+}
 .contacts__link {
   color: $contacts-textColor;
   font-weight: 500;
@@ -106,6 +109,45 @@
     color: $mainButton-textColor;
   }
 }
+.contacts__buttons {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+}
 .contacts__button--red {
+  min-height: 44px;
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 14.5px;
+    margin-bottom: 0px;
+  }
+}
+.contacts__button--white {
+  min-height: 44px;
+  padding-left: 32px;
+  padding-right: 17px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+}
+.contacts__button--red-icon {
+  margin-left: 8px;
+}
+.contacts__button--white-icon {
+  margin-left: 13.17px;
 }
