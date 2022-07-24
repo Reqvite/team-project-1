@@ -48,10 +48,19 @@
     line-height: 1.31;
     color: $main-textColor;
 
+    &:hover{
+        color: #ECEBEB;
+    }
+           &:focus {
+            color: #ECEBEB;
+           }
+
     &--current-color {
         color: $main-titleColor;
     }
 }
+
+
 
 .header__button {
     display: none;
@@ -86,7 +95,8 @@
 
 .mob__menu__button {
     display: block;
-    padding: 16px 48px;
+    min-width: 209px;
+    height: 44px;
     font-size: 16px;
     font-weight: 700;
     margin-left: auto;
@@ -107,12 +117,15 @@
     padding-bottom: 48px;
 
     .container {
-        padding-left: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+     max-width: 100%;
+     width: 100%;
+     padding-left: 0;
+     padding-right: 0;
+     display: flex;
+    flex-direction: column;
+     justify-content: space-between;
+     overflow: auto;
     }
-
 
 
     @include desktop {
@@ -130,45 +143,26 @@
     z-index: 2;
     display: block;
     margin-left: auto;
+    margin-right: 20px;
     margin-bottom: 10px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+   
 }
 
 .mob-nav__list {
-    display: flex;
-    flex-direction: column;
+    border-top: 1px solid #E18298;
 }
 
-.mob-nav__item:not(:last-child) {
-    margin-bottom: 22px;
-}
 
-.mob-nav__item:last-child::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    left: -20px;
-    bottom: -16px;
-    border: 1px solid #E18298;
-}
+
+
 
 
 .mob-nav__item {
-    position: relative;
-    width: 100%;
-    margin-bottom: 16px;
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        left: -20px;
-        top: -16px;
-        border: 1px solid #E18298;
-    }
+    max-width: 100%;
+    border-bottom:1px solid #E18298; 
 
 
 }
@@ -179,8 +173,10 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: $main-textColor;
-    margin-bottom: 16px;
 
     &--current {
         color: $main-titleColor;
