@@ -259,7 +259,7 @@ br {
 }
 
 .about__modal-bottom {
-  padding: 50px 20px;
+  padding: 50px 20px 5px;
   overflow: scroll;
   color: #907e82;
 
@@ -280,14 +280,14 @@ br {
 .about-close__button {
   position: absolute;
   z-index: 2;
-  top: -1px;
+  top: 0;
   right: 0;
   border: 0;
   cursor: pointer;
 
   // display: flex;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   padding-left: 0;
   padding-right: 0;
   font-family: $mainFont;
@@ -306,6 +306,12 @@ br {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &--centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &:hover,
   &:focus {
     background: $mainButton-hoverColor;
@@ -322,10 +328,4 @@ br {
   fill: currentColor;
   stroke: currentColor;
   margin-left: 5px;
-}
-
-.about-close__button-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
