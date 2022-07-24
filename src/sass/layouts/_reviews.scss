@@ -1,28 +1,21 @@
 .reviews {
-  padding-top: 30px;
-  padding-bottom: 30px;
   margin: 0 auto;
   background-color: $main-bgColor;
 
-    @include tablet {
+    @media screen and (min-width: 768px) and (max-width: 1199px){
       padding-bottom: 40px;
-    }
-
-    @include desktop {
-      padding-top: 60px;
-      padding-bottom: 60px;
     }
 
   &__container {
 
     @include tablet {
-      padding-left: 58px;
-      padding-right: 58px;
+      padding-left: 74px;
+      padding-right: 74px;
     }
 
     @include desktop {
-      padding-left: 100px;
-      padding-right: 100px;
+      padding-left: 116px;
+      padding-right: 116px;
     }
   }
 
