@@ -10,6 +10,24 @@
         padding-bottom: 60px;
         
     }
+    @media screen and (max-width: $tablet ) {
+        .grid-item{
+            padding-bottom: 10px;
+
+        }
+        
+    }
+}
+@media screen and (max-width: 767px) {
+    .grid-item{
+
+        &__pic8{
+            bottom: 742px !important;
+        }
+        &__pic2{
+            bottom: 593px !important;
+        }
+    }   
 }
 @media screen and (min-width: $desktop) {
     .grid-item{
