@@ -1,0 +1,78 @@
+$hero-bgColor: #ffb8ca;
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+.hero {
+  background-color: $hero-bgColor;
+  padding-top: 136px;
+  width: 100%;
+  height: 444px;
+  background-image: url(../images/hero/hero-circle-mob.png),
+    linear-gradient($hero-bgColor 50%, $hero-bgColor 0);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/hero-circle-mob@2x.png),
+      linear-gradient($hero-bgColor 50%, $hero-bgColor 0);
+  }
+  background-size: 345px;
+  background-repeat: no-repeat;
+  background-position: right calc(-45px + 50%) top 25px;
+}
+.hero__box {
+  position: absolute;
+  z-index: 2;
+}
+.hero__title {
+  font-family: $titleFont;
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.hero__sub-title {
+  font-size: 48px;
+  line-height: 0.97;
+  color: $main-titleColor;
+}
+.hero__button-box {
+  display: flex;
+}
+.hero__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.25;
+  border-radius: 20px;
+
+  transition: background-color 250ms $time-function, color 250ms $time-function;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: $main-titleColor;
+  }
+}
+.hero__button-first {
+  margin-right: 8px;
+  width: 62.4px;
+  background-color: #d41443;
+  color: #ffffff;
+}
+.hero__button-second {
+  width: 82.8px;
+  background-color: #ffffff;
+  color: #d41443;
+}
+.hero__img {
+  position: absolute;
+  z-index: 1;
+  left: calc(-43px + 50%);
+  top: 127px;
+}
