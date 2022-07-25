@@ -1,14 +1,16 @@
 .section-advantages {
   background-color: $about-advantagesBG;
-
-  padding-bottom: 87px;
+  padding-bottom: 60px;
+  padding-top: 0;
 
   @include tablet {
-    padding-bottom: 251px;
+    padding-top: 0;
+    padding-bottom: 60px;
   }
 
   @include desktop {
-    padding-bottom: 209px;
+    padding-top: 0;
+    padding-bottom: 60px;
   }
 }
 
@@ -103,6 +105,9 @@
   }
 
   &__info {
+    display: inline-block;
+    margin-bottom: 25px;
+
     color: $main-titleColor;
     font-family: $titleFont;
     font-weight: 400;
@@ -122,7 +127,6 @@
   }
 
   &__text {
-    margin-top: 25px;
     color: $secondary-textColor;
     font-weight: 700;
     font-size: 12px;
