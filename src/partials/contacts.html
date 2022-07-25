@@ -1,5 +1,6 @@
-<div class="section-contacts" id="contacts">
+<section class="section-contacts" id="contact">
   <div class="container contacts__container">
+    <h2 class="visually-hidden">Contact</h2>
     <ul class="contacts__list list">
       <li class="contacts__item item">
         <p class="contacts__item-name">CAFE</p>
@@ -84,41 +85,39 @@
       </li>
     </ul>
     <div class="contacts__buttons">
-      <a href="#openModal" class="button-secondary contacts__button--red"
-        >Our Locations
-        <svg width="6" height="10" class="contacts__button-icon--red">
-          <use href="./images/icons.svg#button-icon"></use>
+      <button
+        type="button"
+        class="button-secondary contacts__button--red"
+        contact-modal-open
+      >
+        Our Locations
+        <svg class="button__icon" width="7" height="18">
+          <use href="./images/icons.svg#icon-btn-icon"></use>
         </svg>
-      </a>
-
-      <div id="openModal" class="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <a href="#close" title="Close" class="close">×</a>
-            </div>
-            <div class="modal-body">
-              <div class="map-responsive">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96569.9972698706!2d14.176562669598592!3d40.85404211361388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133ba7f927fd85c3%3A0x830234747fe49579!2sMercato%20Caramanico%20a%20Poggioreale%2C%20Via%20Marino%20Di%20Caramanico%2C%2080143%20Napoli%20NA%2C%20Italy!5e0!3m2!1sen!2sua!4v1658698458807!5m2!1sen!2sua"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </button>
       <button type="button" class="button contacts__button--white">
         Franchise
-        <svg width="6" height="10" class="contacts__button--white-icon">
-          <use href="./images/icons.svg#button-icon"></use>
+        <svg class="button__icon" width="7" height="18">
+          <use href="./images/icons.svg#icon-btn-icon-red"></use>
         </svg>
       </button>
     </div>
   </div>
+</section>
+
+<div class="contacts__modal is-hidden" contact-modal>
+  <button contact-modal-close class="modal__close-btn" type="button"></button>
+  <div class="map-responsive">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96569.9972698706!2d14.176562669598592!3d40.85404211361388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133ba7f927fd85c3%3A0x830234747fe49579!2sMercato%20Caramanico%20a%20Poggioreale%2C%20Via%20Marino%20Di%20Caramanico%2C%2080143%20Napoli%20NA%2C%20Italy!5e0!3m2!1sen!2sua!4v1658698458807!5m2!1sen!2sua"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
 </div>
+
+<script src="./js/contact.js"></script>
