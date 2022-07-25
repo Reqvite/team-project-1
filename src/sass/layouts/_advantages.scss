@@ -105,6 +105,9 @@
   }
 
   &__info {
+    display: inline-block;
+    margin-bottom: 25px;
+
     color: $main-titleColor;
     font-family: $titleFont;
     font-weight: 400;
@@ -124,7 +127,6 @@
   }
 
   &__text {
-    margin-top: 25px;
     color: $secondary-textColor;
     font-weight: 700;
     font-size: 12px;
