@@ -1,14 +1,31 @@
-.grid-item{
-    width: 200px;
+.grid-item {
+  width: 200px;
 }
 
-.gallery{
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    @media screen and (min-width: $tablet) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        
-    }
+.gallery {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    $secondaryContainer-bgColor 10%,
+    $main-bgColor 10%
+  );
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      $secondaryContainer-bgColor 15%,
+      $main-bgColor 15%
+    );
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      to bottom,
+      $secondaryContainer-bgColor 19%,
+      $main-bgColor 19%
+    );
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
