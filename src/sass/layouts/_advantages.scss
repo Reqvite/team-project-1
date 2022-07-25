@@ -1,12 +1,15 @@
 .section-advantages {
   background-color: $about-advantagesBG;
   padding-bottom: 60px;
+  padding-top: 0;
 
   @include tablet {
+    padding-top: 0;
     padding-bottom: 60px;
   }
 
   @include desktop {
+    padding-top: 0;
     padding-bottom: 60px;
   }
 }
