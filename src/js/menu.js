@@ -10,8 +10,8 @@
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuLink.addEventListener('click', toggleMenu);
   function toggleMenu() {
-		refs.menu.classList.toggle('is-hidden');
-		refs.menu.classList.toggle('menu-scroll');
+    refs.menu.classList.toggle('is-hidden');
+    refs.menu.classList.toggle('menu-scroll');
     refs.body.classList.toggle('no-scroll');
   }
 })();
