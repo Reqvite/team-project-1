@@ -1,1 +1,29 @@
-
+<section class="hero">
+  <div class="container">
+    <div class="hero__box">
+      <h1 class="hero__title">
+        ice cream <br />
+        made with <br />
+        <span class="hero__sub-title">passion</span>
+      </h1>
+      <div class="hero__button-box">
+        <a class="hero__button hero__button-first" href="#about-us">
+          Products
+        </a>
+        <a class="hero__button hero__button-second" href="#how-its-made">
+          How it’s made?
+        </a>
+      </div>
+    </div>
+    <picture class="hero__img">
+      <source
+        srcset="
+          ./images/hero/hero-img-mob.png,
+          ./images/hero/hero-img-mob@2x.png
+        "
+        media="(min-widht: 320px)"
+      />
+      <img src="./images/hero/hero-img-mob.png" alt="Ice Cream" />
+    </picture>
+  </div>
+</section>
