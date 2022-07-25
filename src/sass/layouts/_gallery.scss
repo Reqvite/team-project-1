@@ -1,31 +1,63 @@
-.grid-item {
-  width: 200px;
-}
 
-.gallery {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-image: linear-gradient(
-    to bottom,
-    $secondaryContainer-bgColor 10%,
-    $main-bgColor 10%
-  );
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to bottom,
-      $secondaryContainer-bgColor 15%,
-      $main-bgColor 15%
-    );
-  }
-  @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-      to bottom,
-      $secondaryContainer-bgColor 19%,
-      $main-bgColor 19%
-    );
-  }
-  @media screen and (min-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.gallery{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    background: linear-gradient(0deg, rgba(255,255,255,1) 60%,
+     rgba(255,245,246,1) 60%);
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+    }
+    @media screen and (max-width: $tablet ) {
+        .grid-item{
+            padding-bottom: 10px;
+
+        }
+        
+    }
+}
+@media screen and (max-width: 767px) {
+    .grid-item{
+
+        &__pic8{
+            bottom: 742px !important;
+        }
+        &__pic2{
+            bottom: 593px !important;
+        }
+    }   
+}
+@media screen and (min-width: $desktop) {
+    .grid-item{
+        padding-top: 10px;
+    
+        &__pic1{
+            bottom: 85px !important;
+        }
+    
+        &__pic4{
+            margin-bottom: 100px;
+        }
+    
+        &__pic5{
+            left:296px !important;
+            bottom: -45px !important;
+        }
+        &__pic6{
+            bottom: 110px !important;
+        }
+        &__pic7{
+            bottom: -40px !important;
+        }
+        &__pic10{
+            bottom: 85px !important;  
+        }
+        &__pic11{
+            opacity: 0;
+        }
+    }
+    
 }
