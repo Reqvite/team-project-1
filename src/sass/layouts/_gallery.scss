@@ -30,6 +30,10 @@
     }   
 }
 @media screen and (min-width: $desktop) {
+    .grid {
+
+        left: 60px !important;
+    }
     .grid-item{
         padding-top: 10px;
     
