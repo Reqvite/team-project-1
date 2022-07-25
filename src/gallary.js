@@ -8,13 +8,23 @@ window.onload = () => {
         itemSelector: '.grid-item',
 
         gutter: 10,
-        originLeft: false,
+        // originLeft: false,
+        originCenter: true,
         originTop: false,
+        // columnWidth: 30,
+        // fitWidth: true
+        // originRight: false,
+        // originBottom: true,
     });
 
     masonry.on('layoutComplete', () => console.log('layout Complete'));
 
 };
+// var msnry = new Masonry( '.grid', {
+//     columnWidth: 10,
+//     horizontalOrder: true,
+//     itemSelector: '.grid-item'
+//   });
 
 // new Masonry (document.getElementById('masonry'), {
 //     gap: 10,
