@@ -1,14 +1,14 @@
 .section-about {
   background-color: $about-advantagesBG;
   padding-top: 60px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 
   @include tablet {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 
   @include desktop {
-    padding-bottom: 0;
+    padding-bottom: 121px;
 
     background-position: 50% 85%;
     background-image: url(../images/about/milk-bg-desk.png);
