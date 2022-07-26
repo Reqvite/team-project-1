@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .grid {
     margin: 0 auto;
     width: 200px !important;
@@ -35,62 +35,72 @@
     }
   }
 }
-// @media screen and (min-width: 767px) {
+@media screen and (min-width: $tablet) {
 
-//     .grid-item{
-//         width: 90px;
-//         margin-bottom: 6px;
+    .grid-item{
+        width: 90px;
+        margin-top: 6px;
 
-//         &__pic1{
-//             bottom: 50px !important;
-//         }
-//         &__pic4{
-//             width: 190px;
-//             bottom: 65px !important;
-//         }
-//         &__pic5{
-//         left: 200px !important;
-//         bottom: -32px !important;
-//         }
-//         &__pic6{
-//             bottom: 80px !important;
-//         }
-//         &__pic7{
-//             bottom: -18px !important;
-//         }
-//         &__pic10{
-//             bottom: 50px !important;
-//         }
-//     }
+        &__pic1{
+            bottom: 50px !important;
+        }
+        &__pic4{
+            width: 190px;
+            bottom: 65px !important;
+        }
+        &__pic5{
+        left: 200px !important;
+        bottom: -32px !important;
+        }
+        &__pic6{
+            bottom: 80px !important;
+        }
+        &__pic7{
+            bottom: -18px !important;
+        }
+        &__pic10{
+            bottom: 50px !important;
+        }
+    }
 
-// }
+}
 
 @media screen and (min-width: $desktop) {
   .grid {
-    width: 1050px !important;
+    width: 1025px !important;
   }
   .grid-item {
-    padding-top: 10px;
+    width: 138px;
+    padding-top: 6px;
 
     &__pic1 {
       bottom: 85px !important;
     }
+    &__pic2{
+      left: 148px !important;
+    }
 
     &__pic4 {
-      margin-bottom: 100px;
+      width: 283px;
     }
 
     &__pic5 {
       left: 296px !important;
-      bottom: -45px !important;
+      bottom: -80px !important;
     }
     &__pic6 {
+      left: 590px !important;
       bottom: 110px !important;
     }
+    &__pic8{
+      left: 737px !important;
+      bottom: 145.5px !important;
+    }
     &__pic7 {
-      bottom: -40px !important;
+      bottom: -35px !important;
     }
     &__pic10 {
+      left: 885px !important;
       bottom: 85px !important;
     }
     &__pic11 {

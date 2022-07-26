@@ -65,13 +65,16 @@
   }
 }
 .contacts__item-name {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: $contacts-bgCafe;
   color: $main-textColor;
   border-radius: 4px;
-  min-width: 80px;
+  width: 80px;
   height: 16px;
-  text-align: center;
+
   margin-bottom: 20px;
   font-weight: 500;
   font-style: normal;
@@ -212,6 +215,11 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+
+  &:hover {
+    background-color: #d41430;
+  }
+
   @media screen and (min-width: 768px) {
     min-width: 191px;
     margin-left: 0px;
