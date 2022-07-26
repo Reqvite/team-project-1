@@ -212,6 +212,11 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+
+  &:hover {
+    background-color: #d41430;
+  }
+
   @media screen and (min-width: 768px) {
     min-width: 191px;
     margin-left: 0px;

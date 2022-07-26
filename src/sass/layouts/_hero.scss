@@ -51,24 +51,28 @@ $time-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 8px;
   line-height: 1.25;
   border-radius: 20px;
-
-  transition: background-color 250ms $time-function, color 250ms $time-function;
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-    color: $main-titleColor;
-  }
 }
 .hero__button-first {
   margin-right: 8px;
   width: 62.4px;
   background-color: #d41443;
   color: #ffffff;
+  transition: background-color 250ms $time-function;
+  &:hover {
+    background-color: #d41430;
+  }
 }
 .hero__button-second {
   width: 82.8px;
   background-color: #ffffff;
   color: #d41443;
+  transition: background-color 250ms $time-function, color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: $main-titleColor;
+  }
 }
 .hero__img {
   position: absolute;
