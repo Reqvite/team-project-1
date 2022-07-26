@@ -196,6 +196,7 @@ br {
   text-align: center;
   padding-left: 0;
   padding-right: 0;
+  margin-bottom: 32px;
 
   font-family: $mainFont;
   font-style: normal;
@@ -235,49 +236,46 @@ br {
 
 .about__modal {
   position: fixed;
-  background-color: #fff5f6;
-  border: 1px solid tomato;
-  overflow: hidden;
   z-index: 3;
   top: 50%;
   left: 50%;
-  width: 75vw;
-  // height: 75vh;
-  padding-top: 0;
 
+  border: 1px solid tomato;
   border-radius: 22px;
+  width: 75vw;
+  padding-top: 0;
+  background-color: #fff5f6;
+
+  overflow: hidden;
 
   transform: translate(-50%, -50%);
+  opacity: 1;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .about__modal-container {
+  &.is-hidden {
+    opacity: 0;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-container {
     max-width: 100%;
     width: 100%;
     display: flex;
   }
-}
 
-.about__modal-bottom {
-  padding: 50px 20px 5px;
-  overflow: scroll;
-  color: #907e82;
+  &-bottom {
+    padding: 50px 20px 5px;
+    overflow: scroll;
+    color: #907e82;
 
-  p {
-    margin-bottom: 10px;
+    p {
+      margin-bottom: 10px;
+    }
   }
 }
 
-.about__modal.is-hidden {
-  transform: translatex(100%);
-}
-
-.about__button {
-  margin-bottom: 32px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.about-close__button {
+.about__modal .about-close__button {
   position: absolute;
   z-index: 2;
   top: 0;
@@ -285,24 +283,21 @@ br {
   border: 0;
   cursor: pointer;
 
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   padding-left: 0;
   padding-right: 0;
+
+  width: 176px;
+  height: 44px;
+  background-color: $main-textColor;
+  color: $mainButton-textColor;
+  border-radius: 22px;
+  border: white;
+
   font-family: $mainFont;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(18 / 14);
-
-  color: $mainButton-textColor;
-
-  width: 176px;
-  height: 44px;
-  background: $main-textColor;
-  border-radius: 22px;
-  border: white;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
