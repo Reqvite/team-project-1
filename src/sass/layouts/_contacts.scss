@@ -66,16 +66,19 @@
 }
 .contacts__item-name {
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   background-color: $contacts-bgCafe;
   color: $main-textColor;
   border-radius: 4px;
-  width: 80px;
+  max-width: 80px;
   height: 16px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
   margin-bottom: 20px;
+  padding-top: auto;
+  padding-bottom: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 12px;
@@ -87,6 +90,10 @@
     border-radius: 6px;
     height: 28px;
   }
+}
+.cafe {
+  padding: 0%;
+  margin: 0px;
 }
 .contacts__item-name--other {
   background-color: $contacts-bgFood;
@@ -124,29 +131,27 @@
   line-height: 1.5;
   color: $contacts-textColor;
   margin-bottom: 24px;
+  margin-right: 37px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.66;
     margin-bottom: 32px;
+    margin-right: 1px;
   }
 }
 .contacts__schedule {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
+  padding-bottom: 24px;
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+    padding-bottom: 32px;
   }
 }
 .contacts__schedule-item:first-child {
   margin-bottom: 8px;
   @media screen and (min-width: 768px) {
     margin-bottom: 12px;
-  }
-}
-.contacts__schedule-item:last-child {
-  margin-bottom: 24px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
   }
 }
 .contacts__days {
@@ -265,17 +270,6 @@
   }
 }
 
-.backdrop {
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
-  overflow-y: scroll;
-}
 .is-hidden {
   visibility: 0;
   opacity: 0;
@@ -287,12 +281,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
-  width: 700px;
+  background-color: $mainButton-hoverColor;
+  max-width: 700px;
+  width: 100%;
   border-radius: 4px;
   opacity: 1;
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 20px;
+  transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 30px;
 
   &.is-hidden {
     opacity: 0;
@@ -301,36 +297,37 @@
 
 .modal__close-btn {
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 3px;
+  top: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   background-color: transparent;
-  fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-  &:focus .modal__icon {
-    fill: var(--accent-color);
+  &:focus {
+    fill: $mainButton-textColor;
   }
 }
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
+.contacts__icon-close {
+  fill: #000;
 }
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+.map-responsive {
+  position: relative;
+  // min-width: 500px;
+  height: 200px;
+}
+.google-map {
   position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 .no-scroll {
   overflow: hidden;
