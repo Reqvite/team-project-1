@@ -103,11 +103,6 @@ ul {
     line-height: 1.29;
     height: 40px;
   }
-  &:hover,
-  &:focus {
-    background-color: $mainButton-hoverColor;
-    color: $main-titleColor;
-  }
 }
 .hero__button-one {
   margin-right: 8px;
@@ -117,12 +112,21 @@ ul {
   @include desktop {
     width: 107px;
     margin-right: 12px;
+    &:hover,
+    &:focus {
+      background-color: $secondaryButton-hoverColor;
+    }
   }
 }
 .hero__button-two {
   width: 82.8px;
   background-color: $main-textColor;
   color: #d41443;
+  &:hover,
+  &:focus {
+    background-color: $mainButton-hoverColor;
+    color: $main-titleColor;
+  }
   @include desktop {
     width: 138px;
   }
