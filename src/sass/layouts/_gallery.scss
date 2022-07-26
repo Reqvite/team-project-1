@@ -17,48 +17,78 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767px) {
   .grid {
+    width: 100px !important;
     margin: 0 auto;
-    width: 200px !important;
+    
   }
   .grid-item {
-    padding-bottom: 10px;
-    width: 90px;
+    margin-bottom: 5px;
+    // width: 90px;
 
-    &__pic5 {
-      bottom: 403.899px !important;
+  //   &__pic1{
+  //     bottom: 30px !important;
+  //   }
+    &__pic2{
+      bottom: 193px !important;
     }
 
-    &__pic6 {
-      bottom: 303.251px !important;
+  //   &__pic4 {
+  //     bottom: 45px !important;
+  //   }
+
+  //   &__pic5 {
+  //     left: 108px !important;
+  //     bottom: -2px !important;
+  //   }
+    &__pic8{
+      bottom: 243px !important;
     }
+
+  //   &__pic10{
+  //     bottom: 30px !important;
+  //   }
   }
 }
 @media screen and (min-width: $tablet) {
 
+    .grid{
+      width: 790px !important;
+      margin: 0 auto;
+      right: 45px !important;
+    }
+
     .grid-item{
-        width: 90px;
+        // width: 90px;
         margin-top: 6px;
 
         &__pic1{
             bottom: 50px !important;
         }
+        &__pic2{
+          left: 115px !important;
+        }
         &__pic4{
-            width: 190px;
+            // width: 190px;
             bottom: 65px !important;
         }
         &__pic5{
-        left: 200px !important;
-        bottom: -32px !important;
+        left: 230px !important;
+        bottom: -50px !important;
         }
         &__pic6{
-            bottom: 80px !important;
+            bottom: 95px !important;
+            left: 460px !important;
         }
         &__pic7{
             bottom: -18px !important;
         }
+        &__pic8{
+          left: 575px !important;
+        }
         &__pic10{
+          left: 685px !important;
             bottom: 50px !important;
         }
     }
@@ -67,10 +97,12 @@
 
 @media screen and (min-width: $desktop) {
   .grid {
-    width: 1025px !important;
+    width: 1100px !important;
+    left: 39px !important;
   }
   .grid-item {
-    width: 138px;
+
+    // width: 138px;
     padding-top: 6px;
 
     &__pic1 {
@@ -81,7 +113,7 @@
     }
 
     &__pic4 {
-      width: 283px;
+      // width: 283px;
     }
 
     &__pic5 {
@@ -100,6 +132,7 @@
       bottom: -35px !important;
     }
     &__pic10 {
+      
       left: 885px !important;
       bottom: 85px !important;
     }
