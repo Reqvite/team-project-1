@@ -221,11 +221,9 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-
   &:hover {
     background-color: $secondaryButton-hoverColor;
   }
-
   @media screen and (min-width: 768px) {
     min-width: 191px;
     margin-left: 0px;
@@ -278,16 +276,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $mainButton-hoverColor;
-  max-width: 700px;
-  width: 100%;
+  // max-width: 700px;
+  // max-height: 500px;
+  width: 80%;
+  height: 75%;
   border: 2px solid $secondaryButton-bgColor;
   border-radius: 20px;
-
   opacity: 1;
   transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 30px;
-  background-color: $secondaryContainer-bgColor;
+  background-color: #f8e9ea;
 
   &.is-hidden {
     opacity: 0;
@@ -295,16 +294,16 @@
 }
 .modal__close-btn {
   position: absolute;
-  right: 6px;
-  top: 6px;
+  right: 5px;
+  top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background-color: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -317,13 +316,14 @@
 }
 .map-responsive {
   position: relative;
-  height: 500px;
+  height: 100%;
 }
 .google-map {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
+  border-radius: 20px;
   height: 100%;
 }
 .no-scroll {
