@@ -8,7 +8,7 @@
 .section-contacts {
   position: relative;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   background-image: linear-gradient(
     to bottom,
     $main-bgColor 23%,
@@ -105,8 +105,10 @@
 .contacts__place {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
+  padding-right: 37px;
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+    padding-right: 1px;
   }
 }
 .contacts__city {
@@ -129,7 +131,6 @@
   line-height: 1.5;
   color: $contacts-textColor;
   margin-bottom: 24px;
-  margin-right: 37px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.66;
