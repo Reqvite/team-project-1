@@ -66,6 +66,7 @@
 }
 .contacts__item-name {
   display: flex;
+
   background-color: $contacts-bgCafe;
   color: $main-textColor;
   border-radius: 4px;
@@ -74,6 +75,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+
   margin-bottom: 20px;
   padding-top: auto;
   padding-bottom: auto;
@@ -218,6 +220,11 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+
+  &:hover {
+    background-color: #d41430;
+  }
+
   @media screen and (min-width: 768px) {
     min-width: 191px;
     margin-left: 0px;
