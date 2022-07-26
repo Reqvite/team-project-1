@@ -1,9 +1,9 @@
 .footer {
-  padding-top: 32px;
+  padding-top: 20px;
 
   background-color: $secondaryContainer-bgColor;
 
-  @include tablet {
+  @include desktop {
     padding-top: 60px;
   }
 
