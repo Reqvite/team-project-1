@@ -67,7 +67,7 @@
 
 @media screen and (min-width: $desktop) {
   .grid {
-    width: 1010px !important;
+    width: 1025px !important;
   }
   .grid-item {
     width: 138px;
@@ -94,6 +94,7 @@
     }
     &__pic8{
       left: 737px !important;
+      bottom: 145.5px !important;
     }
     &__pic7 {
       bottom: -35px !important;
