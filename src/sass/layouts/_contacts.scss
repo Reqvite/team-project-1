@@ -280,17 +280,19 @@
   background-color: $mainButton-hoverColor;
   max-width: 700px;
   width: 100%;
-  border-radius: 24px;
+  border: 2px solid $secondaryButton-bgColor;
+  border-radius: 20px;
+
   opacity: 1;
   transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 30px;
+  background-color: $secondaryContainer-bgColor;
 
   &.is-hidden {
     opacity: 0;
   }
 }
-
 .modal__close-btn {
   position: absolute;
   right: 6px;
@@ -306,7 +308,7 @@
   background-color: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-  &:focus {
+  &:focus .contacts__icon-close {
     fill: $mainButton-textColor;
   }
 }
@@ -315,6 +317,7 @@
 }
 .map-responsive {
   position: relative;
+  height: 500px;
 }
 .google-map {
   position: absolute;
