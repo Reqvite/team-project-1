@@ -17,16 +17,19 @@
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
       to bottom,
-      $main-bgColor 47%,
-      $secondaryContainer-bgColor 47%
+      $main-bgColor 49%,
+      $secondaryContainer-bgColor 49%
     );
+    padding-top: 40px;
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
       to bottom,
-      $main-bgColor 19%,
-      $secondaryContainer-bgColor 19%
+      $main-bgColor 21%,
+      $secondaryContainer-bgColor 21%
     );
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 .contacts__list {
@@ -89,10 +92,7 @@
     height: 28px;
   }
 }
-.cafe {
-  padding: 0%;
-  margin: 0px;
-}
+
 .contacts__item-name--other {
   background-color: $contacts-bgFood;
   min-width: 130px;
@@ -313,8 +313,6 @@
 }
 .map-responsive {
   position: relative;
-  // min-width: 500px;
-  height: 200px;
 }
 .google-map {
   position: absolute;
