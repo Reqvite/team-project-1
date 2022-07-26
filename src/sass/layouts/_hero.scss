@@ -9,6 +9,8 @@ ul {
   padding: 0;
 }
 .hero {
+  position: relative;
+  overflow: hidden;
   background-color: $hero-bgColor;
   padding-top: 136px;
   width: 100%;
@@ -221,20 +223,6 @@ ul {
   }
 }
 
-.hero__dot-button {
-  padding: 0;
-  margin: 0;
-  border: none;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  cursor: pointer;
-  @include desktop {
-    width: 26px;
-    height: 26px;
-  }
-}
-
 .hero__img-girl {
   @media screen and (max-width: $tablet) {
     display: none;
@@ -249,9 +237,18 @@ ul {
 }
 .hero__img {
   position: absolute;
+  overflow: hidden;
   z-index: 1;
   left: calc(-43px + 50%);
   top: 34px;
+
+  animation-direction: reverse;
+  animation-duration: 1s;
+  animation-name: iceanim;
+  animation-iteration-count: 1;
+
+  animation-timing-function: linear;
+
   @include tablet {
     left: calc(-63px + 50%);
     top: 80px;
@@ -259,5 +256,58 @@ ul {
   @include desktop {
     top: 107px;
     left: calc(43px + 50%);
+  }
+}
+
+.icon-more {
+  fill: #d41443;
+  @include tablet {
+    width: 5px;
+    height: 5px;
+  }
+
+  @include desktop {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.hero__dot-button {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @include desktop {
+    width: 26px;
+    height: 26px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $mainButton-hoverColor;
+  }
+}
+
+@keyframes iceanim {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(100%);
   }
 }
