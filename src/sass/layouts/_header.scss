@@ -8,12 +8,14 @@
 
   & > .container {
     width: 100%;
+    max-width: 320px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 8px;
 
     @include tablet {
+      max-width: 768px;
       padding-top: 32px;
       padding-bottom: 20px;
       padding-left: 32px;
@@ -21,6 +23,7 @@
     }
 
     @include desktop {
+      max-width: 1200px;
       padding-top: 37px;
       padding-bottom: 37px;
       max-width: 1200px;
@@ -73,7 +76,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @include tablet {
-    display: block;
+    display: flex;
     margin-left: 32px;
   }
 }
