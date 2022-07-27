@@ -140,7 +140,7 @@ ul {
 .hero__box-img-milk {
   display: flex;
   align-items: center;
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 }
@@ -151,7 +151,7 @@ ul {
   align-items: flex-start;
 }
 .hero__box-number {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
   @include desktop {
@@ -224,7 +224,7 @@ ul {
 }
 
 .hero__img-girl {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 
