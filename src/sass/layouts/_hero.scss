@@ -62,7 +62,7 @@ ul {
     line-height: 1.14;
     @include desktop {
       font-size: 38px;
-      line-height: 1.16;
+      line-height: 0.5;
       margin-bottom: 24px;
     }
   }
@@ -77,6 +77,7 @@ ul {
   }
   @include desktop {
     font-size: 58px;
+    line-height: 0.5;
   }
 }
 .hero__list-link {
@@ -147,8 +148,13 @@ ul {
 
 .hero__box {
   display: flex;
+
   justify-content: space-between;
   align-items: flex-start;
+
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 .hero__box-number {
   @media screen and (max-width: 767.98px) {
@@ -229,10 +235,10 @@ ul {
   }
 
   position: relative;
-  bottom: -17px;
+  bottom: -18px;
 
   @include desktop {
-    bottom: -20px;
+    bottom: -54px;
   }
 }
 .hero__img {
