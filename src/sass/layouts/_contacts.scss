@@ -42,7 +42,8 @@
   }
 }
 .contacts__item {
-  max-width: 280px;
+  flex-basis: calc((100% - 96px) / 2);
+  // max-width: 280px;
   padding: 40px 32px;
   background-color: $mainButton-bgColor;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -280,9 +281,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: $mainButton-hoverColor;
-  // max-width: 700px;
-  // max-height: 500px;
+  // background-color: $mainButton-hoverColor;
   width: 80%;
   height: 75%;
   border: 1px solid $secondary-titleColor;
@@ -292,10 +291,18 @@
   transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 30px;
-  background-color: #f8e9ea;
+  background-color: #ffecd2;
   &.is-hidden {
     opacity: 0;
   }
+}
+.contact__modal-title {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  color: $mainButton-textColor;
 }
 .modal__close-btn {
   position: absolute;
@@ -309,15 +316,15 @@
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background-color: transparent;
+  background-color: #fff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus .contacts__icon-close {
-    fill: $mainButton-textColor;
+    fill: #000;
   }
 }
 .contacts__icon-close {
-  fill: #000;
+  fill: $mainButton-textColor;
 }
 .map-responsive {
   position: relative;
