@@ -1,4 +1,5 @@
 .gallery {
+  
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -14,125 +15,60 @@
   }
 }
 .grid {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__tumb{
+    margin-right: 3px;
+
+  }
+  &__tumb:nth-child(6n) {
+    margin-right: 0;
+  }
+  &__item-4{
+    margin-top: 35px;
+  }
+  
+}
+.image{
+  margin-bottom: 3px;
 }
 
-@media screen and (max-width: 767.98px) {
-  .grid {
-    width: 100px !important;
-    margin: 0 auto;
-  }
-  .grid-item {
-    margin-bottom: 5px;
-    // width: 90px;
 
-    //   &__pic1{
-    //     bottom: 30px !important;
-    //   }
-    &__pic2 {
-      bottom: 193px !important;
-    }
-
-    //   &__pic4 {
-    //     bottom: 45px !important;
-    //   }
-
-    //   &__pic5 {
-    //     left: 108px !important;
-    //     bottom: -2px !important;
-    //   }
-    &__pic8 {
-      bottom: 243px !important;
-    }
-
-    //   &__pic10{
-    //     bottom: 30px !important;
-    //   }
-  }
-}
 @media screen and (min-width: $tablet) {
   .grid {
-    width: 768px !important;
-    margin: 0 auto;
-    right: 45px !important;
+  
+    &__tumb{
+      margin-right: 6px;
+  
+    }
+    &__tumb:nth-child(6n) {
+      margin-right: 0;
+    }
   }
-
-  .grid-item {
-    // width: 90px;
-    margin-top: 6px;
-
-    &__pic1 {
-      bottom: 50px !important;
-    }
-    &__pic2 {
-      left: 115px !important;
-    }
-    &__pic4 {
-      // width: 190px;
-      bottom: 65px !important;
-    }
-    &__pic5 {
-      left: 230px !important;
-      bottom: -50px !important;
-    }
-    &__pic6 {
-      bottom: 95px !important;
-      left: 460px !important;
-    }
-    &__pic7 {
-      bottom: -18px !important;
-    }
-    &__pic8 {
-      left: 575px !important;
-    }
-    &__pic10 {
-      left: 685px !important;
-      bottom: 50px !important;
-    }
+  .image{
+    margin-bottom: 6px;
   }
 }
 
 @media screen and (min-width: $desktop) {
   .grid {
-    width: 1100px !important;
-    left: 39px !important;
-  }
-  .grid-item {
-    // width: 138px;
-    padding-top: 6px;
-
-    &__pic1 {
-      bottom: 85px !important;
+  
+    &__tumb{
+      margin-right: 8px;
+  
     }
-    &__pic2 {
-      left: 148px !important;
+    &__tumb:nth-child(6n) {
+      margin-right: 0;
     }
-
-    &__pic4 {
-      // width: 283px;
-    }
-
-    &__pic5 {
-      left: 296px !important;
-      bottom: -80px !important;
-    }
-    &__pic6 {
-      left: 590px !important;
-      bottom: 110px !important;
-    }
-    &__pic8 {
-      left: 737px !important;
-      bottom: 145.5px !important;
-    }
-    &__pic7 {
-      bottom: -35px !important;
-    }
-    &__pic10 {
-      left: 885px !important;
-      bottom: 85px !important;
-    }
-    &__pic11 {
-      opacity: 0;
+    &__item-4{
+      margin-top: 45px;
     }
   }
+  
+  .image{
+    margin-bottom: 8px;
+  }
+  
 }
