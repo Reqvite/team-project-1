@@ -8,8 +8,6 @@
   }
 
   @include desktop {
-    padding-bottom: 121px;
-
     background-position: 50% 85%;
     background-image: url(../images/about/milk-bg-desk.png);
     background-repeat: no-repeat;
@@ -19,11 +17,7 @@
 
   @include desktop {
     @include retina {
-      background-position: 50% 85%;
       background-image: url(../images/about/milk-bg-desk-2x.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-size: 100% 521px;
     }
   }
 }
@@ -110,11 +104,7 @@
   background-size: contain;
 
   @include retina {
-    display: block;
-    background-position: 50% 30%;
     background-image: url(../images/about/milk-bg-mob-2x.png);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   @include tablet {
