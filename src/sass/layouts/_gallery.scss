@@ -45,7 +45,11 @@
 
   &:hover {
     z-index: 100;
-    transform: scale(1.3);
+    transform: scale(1.8);
+
+    @include desktop {
+      transform: scale(1.3);
+    }
   }
 }
 
