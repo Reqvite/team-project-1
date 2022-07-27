@@ -242,16 +242,28 @@ br {
 
   border: 1px solid tomato;
   border-radius: 22px;
-  width: 75vw;
+  min-width: 30%;
+  height: 300px;
   padding-top: 0;
   background-color: #fff5f6;
 
-  overflow: hidden;
+  overflow: scroll;
 
   transform: translate(-50%, -50%);
   opacity: 1;
 
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+    width: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px rgba(191, 17, 17, 0.2);
+  }
 
   &.is-hidden {
     opacity: 0;
