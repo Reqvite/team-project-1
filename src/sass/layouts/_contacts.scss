@@ -106,9 +106,14 @@
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
   padding-right: 37px;
+  padding-bottom: 24px;
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
     padding-right: 1px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 38px;
   }
 }
 .contacts__city {
@@ -133,17 +138,14 @@
   font-size: 12px;
   line-height: 1.5;
   color: $contacts-textColor;
-  margin-bottom: 24px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.57;
-    margin-bottom: 32px;
-    margin-right: 1px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.81;
-    margin-right: 38px;
+
     height: 50px;
   }
 }
