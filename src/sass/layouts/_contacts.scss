@@ -145,7 +145,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.81;
-
     height: 50px;
   }
 }
@@ -302,6 +301,7 @@
   transform: translate(-50%);
   text-align: center;
   color: $mainButton-textColor;
+  min-width: 200px;
 }
 .modal__close-btn {
   position: absolute;
