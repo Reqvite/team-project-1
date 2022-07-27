@@ -8,7 +8,7 @@
 .section-contacts {
   position: relative;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   background-image: linear-gradient(
     to bottom,
     $main-bgColor 23%,
@@ -17,16 +17,19 @@
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
       to bottom,
-      $main-bgColor 47%,
-      $secondaryContainer-bgColor 47%
+      $main-bgColor 49%,
+      $secondaryContainer-bgColor 49%
     );
+    padding-top: 40px;
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
       to bottom,
-      $main-bgColor 19%,
-      $secondaryContainer-bgColor 19%
+      $main-bgColor 21%,
+      $secondaryContainer-bgColor 21%
     );
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 .contacts__list {
@@ -91,10 +94,7 @@
     height: 28px;
   }
 }
-.cafe {
-  padding: 0%;
-  margin: 0px;
-}
+
 .contacts__item-name--other {
   background-color: $contacts-bgFood;
   min-width: 130px;
@@ -107,8 +107,10 @@
 .contacts__place {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
+  padding-right: 37px;
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+    padding-right: 1px;
   }
 }
 .contacts__city {
@@ -131,7 +133,6 @@
   line-height: 1.5;
   color: $contacts-textColor;
   margin-bottom: 24px;
-  margin-right: 37px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.66;
@@ -220,11 +221,9 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-
   &:hover {
     background-color: $secondaryButton-hoverColor;
   }
-
   @media screen and (min-width: 768px) {
     min-width: 191px;
     margin-left: 0px;
@@ -277,23 +276,25 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $mainButton-hoverColor;
-  max-width: 700px;
-  width: 100%;
-  border-radius: 4px;
+  // max-width: 700px;
+  // max-height: 500px;
+  width: 80%;
+  height: 75%;
+  border: 2px solid $secondaryButton-bgColor;
+  border-radius: 20px;
   opacity: 1;
   transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 30px;
-
+  background-color: #f8e9ea;
   &.is-hidden {
     opacity: 0;
   }
 }
-
 .modal__close-btn {
   position: absolute;
-  right: 3px;
-  top: 3px;
+  right: 5px;
+  top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,7 +306,7 @@
   background-color: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-  &:focus {
+  &:focus .contacts__icon-close {
     fill: $mainButton-textColor;
   }
 }
@@ -314,14 +315,14 @@
 }
 .map-responsive {
   position: relative;
-  // min-width: 500px;
-  height: 200px;
+  height: 100%;
 }
 .google-map {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
+  border-radius: 20px;
   height: 100%;
 }
 .no-scroll {
